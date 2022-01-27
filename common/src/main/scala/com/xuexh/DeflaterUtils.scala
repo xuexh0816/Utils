@@ -41,7 +41,7 @@ object DeflaterUtils {
       val length: Int = deflater.deflate(bytes)
       outputStream.write(bytes, 0, length)
     }
-    deflater.`end`()
+    deflater.end()
     Base64.getEncoder.encodeToString(outputStream.toByteArray)
   }
 
@@ -62,7 +62,7 @@ object DeflaterUtils {
         e.printStackTrace()
         return null
     } finally {
-      inflater.`end`()
+      inflater.end()
     }
     outputStream.toString
   }
