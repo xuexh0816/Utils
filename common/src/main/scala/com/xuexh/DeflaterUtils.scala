@@ -7,7 +7,7 @@ import java.util.zip.{DataFormatException, Deflater, Inflater}
 /**
  * author: Xue Xionghui
  * crt_time: 2022/1/27 17:16
- * description:
+ * description: From com.streamxhub.streamx.common.util
  */
 object DeflaterUtils {
 
